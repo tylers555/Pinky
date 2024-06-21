@@ -1,0 +1,393 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"110 C:\Program Files\Microchip\xc8\v2.46\pic\include\proc\pic16f15243.h
+[; <" INDF0 equ 00h ;# ">
+"130
+[; <" INDF1 equ 01h ;# ">
+"150
+[; <" PCL equ 02h ;# ">
+"170
+[; <" STATUS equ 03h ;# ">
+"233
+[; <" FSR0L equ 04h ;# ">
+"253
+[; <" FSR0H equ 05h ;# ">
+"277
+[; <" FSR1L equ 06h ;# ">
+"297
+[; <" FSR1H equ 07h ;# ">
+"317
+[; <" BSR equ 08h ;# ">
+"375
+[; <" WREG equ 09h ;# ">
+"395
+[; <" PCLATH equ 0Ah ;# ">
+"415
+[; <" INTCON equ 0Bh ;# ">
+"448
+[; <" PORTA equ 0Ch ;# ">
+"498
+[; <" PORTB equ 0Dh ;# ">
+"537
+[; <" PORTC equ 0Eh ;# ">
+"599
+[; <" TRISA equ 012h ;# ">
+"649
+[; <" TRISB equ 013h ;# ">
+"688
+[; <" TRISC equ 014h ;# ">
+"750
+[; <" LATA equ 018h ;# ">
+"800
+[; <" LATB equ 019h ;# ">
+"839
+[; <" LATC equ 01Ah ;# ">
+"901
+[; <" CPCON equ 09Ah ;# ">
+"934
+[; <" ADRES equ 09Bh ;# ">
+"941
+[; <" ADRESL equ 09Bh ;# ">
+"961
+[; <" ADRESH equ 09Ch ;# ">
+"981
+[; <" ADCON0 equ 09Dh ;# ">
+"1042
+[; <" ADCON1 equ 09Eh ;# ">
+"1096
+[; <" ADACT equ 09Fh ;# ">
+"1124
+[; <" RB4I2C equ 010Ch ;# ">
+"1157
+[; <" RB6I2C equ 010Dh ;# ">
+"1190
+[; <" RC1REG equ 0119h ;# ">
+"1210
+[; <" TX1REG equ 011Ah ;# ">
+"1230
+[; <" SP1BRG equ 011Bh ;# ">
+"1237
+[; <" SP1BRGL equ 011Bh ;# ">
+"1257
+[; <" SP1BRGH equ 011Ch ;# ">
+"1277
+[; <" RC1STA equ 011Dh ;# ">
+"1339
+[; <" TX1STA equ 011Eh ;# ">
+"1401
+[; <" BAUD1CON equ 011Fh ;# ">
+"1453
+[; <" SSP1BUF equ 018Ch ;# ">
+"1473
+[; <" SSP1ADD equ 018Dh ;# ">
+"1593
+[; <" SSP1MSK equ 018Eh ;# ">
+"1663
+[; <" SSP1STAT equ 018Fh ;# ">
+"2027
+[; <" SSP1CON1 equ 0190h ;# ">
+"2147
+[; <" SSP1CON2 equ 0191h ;# ">
+"2334
+[; <" SSP1CON3 equ 0192h ;# ">
+"2396
+[; <" TMR1 equ 020Ch ;# ">
+"2403
+[; <" TMR1L equ 020Ch ;# ">
+"2523
+[; <" TMR1H equ 020Dh ;# ">
+"2643
+[; <" T1CON equ 020Eh ;# ">
+"2648
+[; <" TMR1CON equ 020Eh ;# ">
+"2865
+[; <" T1GCON equ 020Fh ;# ">
+"2870
+[; <" TMR1GCON equ 020Fh ;# ">
+"3115
+[; <" T1GATE equ 0210h ;# ">
+"3120
+[; <" TMR1GATE equ 0210h ;# ">
+"3281
+[; <" T1CLK equ 0211h ;# ">
+"3286
+[; <" TMR1CLK equ 0211h ;# ">
+"3290
+[; <" PR1 equ 0211h ;# ">
+"3491
+[; <" T2TMR equ 028Ch ;# ">
+"3496
+[; <" TMR2 equ 028Ch ;# ">
+"3545
+[; <" T2PR equ 028Dh ;# ">
+"3550
+[; <" PR2 equ 028Dh ;# ">
+"3599
+[; <" T2CON equ 028Eh ;# ">
+"3745
+[; <" T2HLT equ 028Fh ;# ">
+"3873
+[; <" T2CLKCON equ 0290h ;# ">
+"3941
+[; <" T2RST equ 0291h ;# ">
+"4021
+[; <" CCPR1 equ 030Ch ;# ">
+"4028
+[; <" CCPR1L equ 030Ch ;# ">
+"4048
+[; <" CCPR1H equ 030Dh ;# ">
+"4068
+[; <" CCP1CON equ 030Eh ;# ">
+"4195
+[; <" CCP1CAP equ 030Fh ;# ">
+"4251
+[; <" CCPR2 equ 0310h ;# ">
+"4258
+[; <" CCPR2L equ 0310h ;# ">
+"4278
+[; <" CCPR2H equ 0311h ;# ">
+"4298
+[; <" CCP2CON equ 0312h ;# ">
+"4425
+[; <" CCP2CAP equ 0313h ;# ">
+"4481
+[; <" PWM3DC equ 0314h ;# ">
+"4488
+[; <" PWM3DCL equ 0314h ;# ">
+"4509
+[; <" PWM3DCH equ 0315h ;# ">
+"4529
+[; <" PWM3CON equ 0316h ;# ">
+"4585
+[; <" PWM4DC equ 0318h ;# ">
+"4592
+[; <" PWM4DCL equ 0318h ;# ">
+"4613
+[; <" PWM4DCH equ 0319h ;# ">
+"4633
+[; <" PWM4CON equ 031Ah ;# ">
+"4689
+[; <" TMR0L equ 059Ch ;# ">
+"4694
+[; <" TMR0 equ 059Ch ;# ">
+"4827
+[; <" TMR0H equ 059Dh ;# ">
+"4832
+[; <" PR0 equ 059Dh ;# ">
+"5081
+[; <" T0CON0 equ 059Eh ;# ">
+"5205
+[; <" T0CON1 equ 059Fh ;# ">
+"5347
+[; <" PIR0 equ 070Ch ;# ">
+"5380
+[; <" PIR1 equ 070Dh ;# ">
+"5442
+[; <" PIR2 equ 070Eh ;# ">
+"5475
+[; <" PIE0 equ 0716h ;# ">
+"5508
+[; <" PIE1 equ 0717h ;# ">
+"5570
+[; <" PIE2 equ 0718h ;# ">
+"5603
+[; <" WDTCON equ 080Ch ;# ">
+"5665
+[; <" BORCON equ 0811h ;# ">
+"5692
+[; <" PCON0 equ 0813h ;# ">
+"5749
+[; <" PCON1 equ 0814h ;# ">
+"5770
+[; <" NVMADR equ 081Ah ;# ">
+"5777
+[; <" NVMADRL equ 081Ah ;# ">
+"5797
+[; <" NVMADRH equ 081Bh ;# ">
+"5817
+[; <" NVMDAT equ 081Ch ;# ">
+"5824
+[; <" NVMDATL equ 081Ch ;# ">
+"5844
+[; <" NVMDATH equ 081Dh ;# ">
+"5864
+[; <" NVMCON1 equ 081Eh ;# ">
+"5920
+[; <" NVMCON2 equ 081Fh ;# ">
+"5940
+[; <" OSCCON equ 088Eh ;# ">
+"6005
+[; <" OSCSTAT equ 0890h ;# ">
+"6051
+[; <" OSCEN equ 0891h ;# ">
+"6091
+[; <" OSCTUNE equ 0892h ;# ">
+"6149
+[; <" OSCFRQ equ 0893h ;# ">
+"6189
+[; <" FVRCON equ 090Ch ;# ">
+"6248
+[; <" PPSLOCK equ 01E8Fh ;# ">
+"6268
+[; <" INTPPS equ 01E90h ;# ">
+"6328
+[; <" T0CKIPPS equ 01E91h ;# ">
+"6388
+[; <" T1CKIPPS equ 01E92h ;# ">
+"6454
+[; <" T1GPPS equ 01E93h ;# ">
+"6520
+[; <" T2INPPS equ 01E9Ch ;# ">
+"6586
+[; <" CCP1PPS equ 01EA1h ;# ">
+"6652
+[; <" CCP2PPS equ 01EA2h ;# ">
+"6718
+[; <" ADACTPPS equ 01EC3h ;# ">
+"6784
+[; <" SSP1CLKPPS equ 01EC5h ;# ">
+"6850
+[; <" SSP1DATPPS equ 01EC6h ;# ">
+"6916
+[; <" SSP1SSPPS equ 01EC7h ;# ">
+"6982
+[; <" RX1PPS equ 01ECBh ;# ">
+"6987
+[; <" RX1DTPPS equ 01ECBh ;# ">
+"6991
+[; <" RXPPS equ 01ECBh ;# ">
+"7174
+[; <" CK1PPS equ 01ECCh ;# ">
+"7179
+[; <" TX1CKPPS equ 01ECCh ;# ">
+"7183
+[; <" CKPPS equ 01ECCh ;# ">
+"7366
+[; <" RA0PPS equ 01F10h ;# ">
+"7424
+[; <" RA1PPS equ 01F11h ;# ">
+"7482
+[; <" RA2PPS equ 01F12h ;# ">
+"7540
+[; <" RA4PPS equ 01F14h ;# ">
+"7598
+[; <" RA5PPS equ 01F15h ;# ">
+"7656
+[; <" RB4PPS equ 01F1Ch ;# ">
+"7714
+[; <" RB5PPS equ 01F1Dh ;# ">
+"7772
+[; <" RB6PPS equ 01F1Eh ;# ">
+"7830
+[; <" RB7PPS equ 01F1Fh ;# ">
+"7888
+[; <" RC0PPS equ 01F20h ;# ">
+"7946
+[; <" RC1PPS equ 01F21h ;# ">
+"8004
+[; <" RC2PPS equ 01F22h ;# ">
+"8062
+[; <" RC3PPS equ 01F23h ;# ">
+"8120
+[; <" RC4PPS equ 01F24h ;# ">
+"8178
+[; <" RC5PPS equ 01F25h ;# ">
+"8236
+[; <" RC6PPS equ 01F26h ;# ">
+"8294
+[; <" RC7PPS equ 01F27h ;# ">
+"8352
+[; <" ANSELA equ 01F38h ;# ">
+"8397
+[; <" WPUA equ 01F39h ;# ">
+"8447
+[; <" ODCONA equ 01F3Ah ;# ">
+"8492
+[; <" SLRCONA equ 01F3Bh ;# ">
+"8537
+[; <" INLVLA equ 01F3Ch ;# ">
+"8587
+[; <" IOCAP equ 01F3Dh ;# ">
+"8637
+[; <" IOCAN equ 01F3Eh ;# ">
+"8687
+[; <" IOCAF equ 01F3Fh ;# ">
+"8737
+[; <" ANSELB equ 01F43h ;# ">
+"8776
+[; <" WPUB equ 01F44h ;# ">
+"8815
+[; <" ODCONB equ 01F45h ;# ">
+"8854
+[; <" SLRCONB equ 01F46h ;# ">
+"8893
+[; <" INLVLB equ 01F47h ;# ">
+"8932
+[; <" IOCBP equ 01F48h ;# ">
+"8971
+[; <" IOCBN equ 01F49h ;# ">
+"9010
+[; <" IOCBF equ 01F4Ah ;# ">
+"9049
+[; <" ANSELC equ 01F4Eh ;# ">
+"9111
+[; <" WPUC equ 01F4Fh ;# ">
+"9173
+[; <" ODCONC equ 01F50h ;# ">
+"9235
+[; <" SLRCONC equ 01F51h ;# ">
+"9297
+[; <" INLVLC equ 01F52h ;# ">
+"9359
+[; <" IOCCP equ 01F53h ;# ">
+"9421
+[; <" IOCCN equ 01F54h ;# ">
+"9483
+[; <" IOCCF equ 01F55h ;# ">
+"9545
+[; <" STATUS_SHAD equ 01FE4h ;# ">
+"9565
+[; <" WREG_SHAD equ 01FE5h ;# ">
+"9585
+[; <" BSR_SHAD equ 01FE6h ;# ">
+"9605
+[; <" PCLATH_SHAD equ 01FE7h ;# ">
+"9625
+[; <" FSR0_SHAD equ 01FE8h ;# ">
+"9632
+[; <" FSR0L_SHAD equ 01FE8h ;# ">
+"9652
+[; <" FSR0H_SHAD equ 01FE9h ;# ">
+"9672
+[; <" FSR1L_SHAD equ 01FEAh ;# ">
+"9692
+[; <" FSR1H_SHAD equ 01FEBh ;# ">
+"9712
+[; <" STKPTR equ 01FEDh ;# ">
+"9756
+[; <" TOSL equ 01FEEh ;# ">
+"9826
+[; <" TOSH equ 01FEFh ;# ">
+"4 ..\..\source\bootloader_stubs.c
+[v _interrupt `(v ~T0 @X0 1 ef@1024 ]
+{
+[e :U _interrupt ]
+[f ]
+"6
+[e :UE 520 ]
+}
+"8
+[v _startup `(v ~T0 @X0 1 ef@512 ]
+{
+[e :U _startup ]
+[f ]
+"10
+[e :UE 521 ]
+}
+"12
+[v _loop `(v ~T0 @X0 1 ef@640 ]
+{
+[e :U _loop ]
+[f ]
+"14
+[e :UE 522 ]
+}
